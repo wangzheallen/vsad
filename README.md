@@ -3,15 +3,6 @@
 <pre><code>Weakly Supervised PatchNets: Describing and Aggregating Local Patches for Scene Recognition
 Zhe Wang, Limin Wang, Yali Wang, Bowen Zhang, and Yu Qiao
 </code></pre>
-<h4>Feature</h4>
-<p>You can directly download our VSAD/FV/VLAD feature based on scene patchenet from the link: </p>
-
-<p>VLAD: </p>
-<p>FV: </p>
-<p>VSAD: </p>
-
-
-
 <p>The performance is as below: </p> 
 <table><thead>
 <tr>
@@ -42,10 +33,10 @@ Zhe Wang, Limin Wang, Yali Wang, Bowen Zhang, and Yu Qiao
 </tr>
 </tbody></table>
 
-<p>Note: The encoding method based on our scene_patchenet feature surpass human performance on sun397(68%).</p>
+<p>Note: The encoding method based on our <strong>scene_patchenet</strong> feature surpass human performance on sun397(68.5%).</p>
 
 <h4>Model</h4>
-<p>Our trained scene_patchnet and object_patchenet, the model is based on cudnn_v4, if your system is based on cudnn_v5, you can use the code below cudnn_v4 to cudnn_v5: https://github.com/yjxiong/caffe/blob/action_recog/python/bn_convert_style.py </p> 
+<p>Our trained <strong>scene_patchnet</strong> and <strong>object_patchenet</strong>, the model is based on cudnn_v4, if your system is based on cudnn_v5, you can use the code below cudnn_v4 to cudnn_v5: https://github.com/yjxiong/caffe/blob/action_recog/python/bn_convert_style.py </p> 
 
 <table><thead>
 <tr>
@@ -58,27 +49,33 @@ Zhe Wang, Limin Wang, Yali Wang, Bowen Zhang, and Yu Qiao
 <td align="center">85.3</td>
 </tr>
 <tr>
-<td align="center">Scene_patchnet_on_Places</td>
+<td align="center">Scene_patchnet_on_Places205:</td>
 <td align="center">82.7</td>
 </tr>
 </tbody></table>
 
-<p>They both take 128*128 patches as input.</p>
+<p>They both take 128 * 128 patches as input.</p>
 
 <h4>code</h4> 
 <ul>
-<li>extracting_feature_exmaple.m     -- you can use this code as template to extract scene_patchnet_feature or object_patchnet_probability</li>
+<li>extracting_feature_exmaple.m     -- you can use this code as template to extract scene_patchnet_feature or object_patchnet_probability, for scene_patchnet_feature it is global average pool feature and for for object_patchnet_probability it is fully connnect feature with softmax function</li>
 <li>for_encoder_scene67.mat          -- serve as assist to your handle on MIT_indoor dataset, from vl_feat</li> 
 <li>for_encoder_sun397.mat           -- serve as assist to your handle on sun397 dataset</li> 
 <li>mit_pca.mat                      -- our generated scene_patchnet_feature pca matrix for mit indoor, used in vsad_encoding_example.m</li>
 <li>mit_vsad_codebook.mat            -- our generated semantical codebook for mit_indoor, used in vsad_encoding_example.m</li> 
-<li>multi_crop.m                     -- dense crop as 10 multiply 10 grid, used in extracting_feature_example.m</li> 
+<li>multi_crop.m                     -- dense crop as 10 * 10 grid, used in extracting_feature_example.m</li> 
 <li>object_selection_256.mat         -- 256 objects selected from 1000(in ImageNet), applied to both MIT_indoor and SUN397</li> 
 <li>sun_pca.mat                      -- our generated scene_patchnet_feature pca matrix for sun397, used in vsad_encoding_example.m</li> 
 <li>sun_vsad_codebook.mat            -- our generated semantical codebookfor sun397, used in vsad_encoding_example.m</li> 
 <li>vsad_encoding_example.m          -- an example for VSAD encoding algorithm</li> 
 <li>vsad_encoding.m                  -- our developed VSAD encoding function</li>
 </ul>
+
+<h4>Usage</h4> 
+<p>1. Download code and model</p>
+<p>2. Extract scene_net_feature and object_net_probability (extracting_feature_example.m, multi_crop.m)</p>
+<p>3. VSAD encoding (vsad_encoding.m, vsad_encoding_example.m, mit_pca.mat, mit_vsad_codebook.mat, object_selection_256.mat)</p>
+
 
 <p>Contact </p>
 
@@ -89,7 +86,7 @@ Zhe Wang, Limin Wang, Yali Wang, Bowen Zhang, and Yu Qiao
 
 
 </li>
-</ul></td>
+</ul></h></td>
 </tbody></th>
 </tr>
-</thead></table></p></h></code></pre></strong></p>
+</thead></table></p></code></pre></strong></p>
