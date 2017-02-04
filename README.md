@@ -35,7 +35,7 @@ Zhe Wang, Limin Wang, Yali Wang, Bowen Zhang, and Yu Qiao
 
 <p>Note: The encoding method based on our <strong>scene_patchenet</strong> feature surpass human performance on sun397(68.5%).</p>
 <h4>Feature</h4>
-we released the concise and effective feature for MIT indoor feature, it is notated as <strong>hybrid_PatchNet+VSAD</strong> in the paper which obtains <strong>86.1</strong> accuracy. You can use it as baseline or as complementary feature for furthur study.
+we released the concise and effective feature for MIT indoor feature, it is notated as <strong>hybrid_PatchNet+VSAD</strong> in the paper which obtains <strong>86.1</strong> accuracy. You can use it as baseline or as complementary feature for further study.
 <ul>
 <li><a href="http://mmlab.siat.ac.cn/mit_hybrid_vsad.mat">mit_hybrid_vsad.mat</a></li>
 </ul>
@@ -77,7 +77,7 @@ we released the concise and effective feature for MIT indoor feature, it is nota
 
 <h4>Code</h4> 
 <ul>
-<li>mit_hybrid_vsad.mat     -- you can use this feature as your baseline or to concatenate for furthur study, it is only 100*256*2*2 dimensions while performs <strong>86.1</strong> acc on MIT indoor, you can download from <a href="http://mmlab.siat.ac.cn/mit_hybrid_vsad.mat">mit_hybrid_vsad.mat</a></li>
+<li>mit_hybrid_vsad.mat     -- you can use this feature as your baseline or to concatenate for further study, it is only 100*256*2*2 dimensions while performs <strong>86.1</strong> acc on MIT indoor, you can download from <a href="http://mmlab.siat.ac.cn/mit_hybrid_vsad.mat">mit_hybrid_vsad.mat</a></li>
 <li>extracting_feature_exmaple.m     -- you can use this code as template to extract scene_patchnet_feature or object_patchnet_probability, for scene_patchnet_feature it is global average pool feature and for for object_patchnet_probability it is fully connnect feature with softmax function</li>
 <li>for_encoder_scene67.mat          -- serve as assist to your handle on MIT_indoor dataset, from vl_feat</li> 
 <li>for_encoder_sun397.mat           -- serve as assist to your handle on sun397 dataset</li> 
