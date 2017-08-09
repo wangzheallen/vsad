@@ -89,6 +89,8 @@ we released the concise and effective feature for MIT indoor feature, it is nota
 <li>sun_vsad_codebook.mat            -- our generated semantical codebookfor sun397, used in vsad_encoding_example.m</li> 
 <li>vsad_encoding_example.m          -- an example for VSAD encoding algorithm</li> 
 <li>vsad_encoding.m                  -- our developed VSAD encoding function</li>
+<li>plot_mit_sun.m                     -- Plot the figure in the below of this page</li>
+<li>xticklabel_rotate.m                  -- Serve for plot_mit_sun and rotate the text in the figure</li>
 </ul>
 
 <h4>Usage</h4> 
