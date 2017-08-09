@@ -104,6 +104,10 @@ we released the concise and effective feature for MIT indoor feature, it is nota
 <li><a href="http://wanglimin.github.io/">Limin Wang</a></li>
 </ul>
 
+<p> Figure Plot for Reference </p>
+
+![Alt text](https://github.com/wangzheallen/vsad/blob/master/4.png)
+
 
 </li>
 </ul></h></td>
