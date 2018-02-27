@@ -38,6 +38,7 @@ Zhe Wang, Limin Wang, Yali Wang, Bowen Zhang, and Yu Qiao
 we released the concise and effective feature for MIT indoor feature, it is notated as <strong>hybrid_PatchNet+VSAD</strong> in the paper which obtains <strong>86.1</strong> accuracy. You can use it as baseline or as complementary feature for further study.
 <ul>
 <li><a href="http://mmlab.siat.ac.cn/mit_hybrid_vsad.mat">mit_hybrid_vsad.mat</a></li>
+<li><a href="https://drive.google.com/open?id=1i3uwjWBeO2ke9Ikai_XpQPHjpXEnuH9h">mit_hybrid_vsad.mat, Google_drive</a></li>
 </ul>
 <table><thead>
 <tr>
